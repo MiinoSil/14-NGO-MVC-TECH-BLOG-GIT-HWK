@@ -1,7 +1,6 @@
 [
     {
-        "blog_id": 1,
-        "posts_description": "testing, testing, testing",
-        "user_id": 1
+      "title": "Testing blog post",
+      "description": "Test, testing, testing"
     }
-]
+  ]

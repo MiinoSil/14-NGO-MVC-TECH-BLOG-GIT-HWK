@@ -15,7 +15,7 @@ Blog.hasMany(Post,{
   foreignKey: 'blog_id'
 })
 
-Posts.belongsTo(User, {
+Post.belongsTo(User, {
     foreignKey: 'user_id',
 })
 

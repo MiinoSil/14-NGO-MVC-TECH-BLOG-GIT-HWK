@@ -1,5 +1,5 @@
 const sequelize = require('../config/connection');
-const { User, Blog, Posts } = require('../models');
+const { User, Blog, Post } = require('../models');
 
 const blogData = require('./blogData.json');
 const postsData = require('./postsData.json');
@@ -20,7 +20,7 @@ const seedDatabase = async () => {
         });
     }
 
-    const posts = await Posts.bulkCreate(postsData, {
+    const posts = await Post.bulkCreate(postsData, {
         returning: true,
     });
 
