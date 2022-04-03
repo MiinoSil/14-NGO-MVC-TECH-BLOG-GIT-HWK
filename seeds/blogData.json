@@ -1,6 +1,12 @@
 [
     {
       "title": "Testing blog post",
-      "description": "Test, testing, testing"
+      "description": "Test, testing, testing",
+      "user_id": 1
+    },
+    {
+      "title": "challenges of coding",
+      "description": "finding out why it does not work",
+      "user_id": 2
     }
   ]

@@ -1,7 +1,14 @@
 [
     {
         "blog_id": 1,
+        "title": "This is test for blog",
         "posts_description": "testing, testing, testing",
         "user_id": 1
+    },
+    {
+        "blog_id": 2,
+        "title": "Do I have duplication?",
+        "posts_description": "Should we combine blog and posts?",
+        "user_id": 3
     }
 ]
