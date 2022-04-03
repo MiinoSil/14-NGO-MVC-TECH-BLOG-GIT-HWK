@@ -1,19 +1,19 @@
-const blogID = document.querySelector('.new-comment-form');
-const postDescription = document.querySelector('#comment_description');
+const blogID = document.querySelector('.new-post-form');
+const postDescription = document.querySelector('#post_description');
 
-const commentFormHandler = async function (event) {
+const postFormHandler = async function (event) {
 	event.preventDefault();
 
 	const blog_id = blogID.dataset.blogid;
 
-	const comment_description = postDescription.value.trim();
+	const post_description = postDescription.value.trim();
 
-	if (comment_description) {
-		await fetch('/api/comments', {
+	if (post_description) {
+		await fetch('/api/posts', {
 			method: 'POST',
 			body: JSON.stringify({
 				blog_id,
-				comment_description,
+				post_description,
 			}),
 			headers: {
 				'Content-Type': 'application/json'
@@ -24,5 +24,5 @@ const commentFormHandler = async function (event) {
 };
 
 document
-	.querySelector('.new-comment-form')
-	.addEventListener('submit', commentFormHandler);
+	.querySelector('.new-post-form')
+	.addEventListener('submit', postFormHandler);

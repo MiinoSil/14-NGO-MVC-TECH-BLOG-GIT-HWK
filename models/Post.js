@@ -10,7 +10,7 @@ Post.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    comment_description: {
+    post_description: {
       type: DataTypes.STRING,
     },
     date_created: {
@@ -38,7 +38,7 @@ Post.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'comment',
+    modelName: 'post',
   }
 );
 module.exports = Post;
